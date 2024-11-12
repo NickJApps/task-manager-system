@@ -1,9 +1,21 @@
-*{
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+:root {
+    --open-sans-font-family: "OpenSans";
+    --regular-font-wight: 400;
+    --main-font-color: #000000;
+}
+
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     height: 100vh;
 }
 
@@ -26,7 +38,7 @@ li {
     list-style-type: none;
 }
 
-a{
+a {
     list-style-type: none;
     text-decoration: none;
     color: #000000;
@@ -39,36 +51,40 @@ a{
 
 /* Nav */
 
-.logo-items{
+.logo-items {
     display: flex;
 }
 
-.navbar-container{
+.navbar-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
 }
 
-.nav-logo-container, .nav-main-container, .nav-settings-container {
+.nav-logo-container,
+.nav-main-container,
+.nav-settings-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-main-container{
-    min-width: 770px;
+.nav-main-container {
+    min-width: 780px;
 }
 
-.nav-logo-container{
+.nav-logo-container {
     min-width: 150px;
 }
 
-.nav-settings-container{
+.nav-settings-container {
     min-width: 100px;
 }
 
-.logo-items, .nav-main-items, .settings-items {
+.logo-items,
+.nav-main-items,
+.settings-items {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -79,57 +95,91 @@ a{
     min-width: 700px;
 }
 
-.nav-logo, .nav-settings{
-    min-width: 100px; 
+.nav-logo,
+.nav-settings {
+    min-width: 100px;
 }
 
 
 /*nav buttons*/
 
-.nav-buttons-container{
+.nav-buttons-container {
     display: flex;
 }
 
-.button{
+.button {
     display: flex;
     border: 1px solid #CBD5E0;
     padding: 5px 10px;
     border-radius: 5px;
-    a{
+
+    a {
         display: flex;
+        font-family: var(--open-sans-font-family);
+        color: var(--main-font-color);
+        font-size: 14px;
     }
-    a img:first-child{
+
+    a img:first-child {
         margin-right: 5px;
     }
-    a img:last-child{
+
+    a img:last-child {
         margin-left: 5px;
-    } 
+    }
 }
 
-.button:hover{
+.button:hover {
     background-color: #CBD5E0;
 }
 
-.button-left{
+.button-left {
     border-radius: 5px 0 0 5px;
 }
 
-.button-right{
+.button-right {
     border-radius: 0 5px 5px 0;
 }
 
-.settings-button{
+.settings-button {
     border: 1px solid #CBD5E0;
     padding: 5px;
     border-radius: 5px;
 }
 
-.settings-button:hover{
+.settings-button:hover {
     background-color: #CBD5E0;
 }
 
-/* workspace container */
-.workspace-container{
+
+/* Основной контейнер */
+.workspase-container {
     display: flex;
-    height: 100%;
+    width: 100%;
+}
+
+/* Колонки */
+.column {
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.column-left {
+    background-color: #f2f2f2;
+    width: 50%;
+    /* Изначальная ширина левой колонки */
+}
+
+.column-right {
+    background-color: #e0e0e0;
+    width: 50%;
+    /* Изначальная ширина правой колонки */
+}
+
+/* Разделитель */
+.divider {
+    width: 5px;
+    background-color: #cccccc;
+    cursor: ew-resize;
 }

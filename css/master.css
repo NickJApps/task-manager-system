@@ -1,3 +1,14 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+}
+:root {
+  --open-sans-font-family: "OpenSans";
+  --regular-font-wight: 400;
+  --main-font-color: #000000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,7 +67,9 @@ a {
   padding: 20px 0;
 }
 
-.nav-logo-container, .nav-main-container, .nav-settings-container {
+.nav-logo-container,
+.nav-main-container,
+.nav-settings-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +82,7 @@ a {
 }
 
 .nav-main-container {
-  min-width: 770px;
+  min-width: 780px;
 }
 
 .nav-logo-container {
@@ -80,7 +93,9 @@ a {
   min-width: 100px;
 }
 
-.logo-items, .nav-main-items, .settings-items {
+.logo-items,
+.nav-main-items,
+.settings-items {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,7 +111,8 @@ a {
   min-width: 700px;
 }
 
-.nav-logo, .nav-settings {
+.nav-logo,
+.nav-settings {
   min-width: 100px;
 }
 
@@ -119,6 +135,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: var(--open-sans-font-family);
+  color: var(--main-font-color);
+  font-size: 14px;
 }
 .button a img:first-child {
   margin-right: 5px;
@@ -149,10 +168,37 @@ a {
   background-color: #CBD5E0;
 }
 
-/* workspace container */
-.workspace-container {
+/* Основной контейнер */
+.workspase-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  width: 100%;
+}
+
+/* Колонки */
+.column {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+}
+
+.column-left {
+  background-color: #f2f2f2;
+  width: 50%;
+  /* Изначальная ширина левой колонки */
+}
+
+.column-right {
+  background-color: #e0e0e0;
+  width: 50%;
+  /* Изначальная ширина правой колонки */
+}
+
+/* Разделитель */
+.divider {
+  width: 5px;
+  background-color: #cccccc;
+  cursor: ew-resize;
 }
