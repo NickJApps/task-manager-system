@@ -29,12 +29,7 @@ li {
 a{
     list-style-type: none;
     text-decoration: none;
-}
-
-/* Nav */
-
-.logo{
-    display: flex;
+    color: #000000;
 }
 
 .container {
@@ -42,44 +37,99 @@ a{
     padding: 0 20px;
 }
 
-.nav-container{
+/* Nav */
+
+.logo-items{
+    display: flex;
+}
+
+.navbar-container{
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
 }
 
-.nav-main, .nav-contact{
+.nav-logo-container, .nav-main-container, .nav-settings-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-logo, .nav-contact{
-    min-width: 150px; 
+.nav-main-container{
+    min-width: 770px;
 }
 
-.nav-main {
-    min-width: 600px;
+.nav-logo-container{
+    min-width: 150px;
 }
 
-.nav-main-items, .contact-items{
+.nav-settings-container{
+    min-width: 100px;
+}
+
+.logo-items, .nav-main-items, .settings-items {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.nav-main {
+    min-width: 700px;
+}
+
+.nav-logo, .nav-settings{
+    min-width: 100px; 
 }
 
 
 /*nav buttons*/
+
 .nav-buttons-container{
     display: flex;
 }
 
 .button{
     display: flex;
-    border: 1px solid black;
-
+    border: 1px solid #CBD5E0;
+    padding: 5px 10px;
+    border-radius: 5px;
     a{
         display: flex;
     }
+    a img:first-child{
+        margin-right: 5px;
+    }
+    a img:last-child{
+        margin-left: 5px;
+    } 
+}
+
+.button:hover{
+    background-color: #CBD5E0;
+}
+
+.button-left{
+    border-radius: 5px 0 0 5px;
+}
+
+.button-right{
+    border-radius: 0 5px 5px 0;
+}
+
+.settings-button{
+    border: 1px solid #CBD5E0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.settings-button:hover{
+    background-color: #CBD5E0;
+}
+
+/* workspace container */
+.workspace-container{
+    display: flex;
+    height: 100%;
 }
