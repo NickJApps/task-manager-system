@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-        <div class="navbar-container">
+        <div class="navbar-container" id="navbar-container">
             <div class="nav-logo-container"> 
                 <ul class="logo-items">
                     <li><a href=""><img src="imgs/icon/burger-img.svg" alt=""></a></li>
@@ -22,7 +22,7 @@
                     <li class="nav-main-item">
                         <ul class="nav-buttons-container">
                             <li class="button button-left"><a href=""><img src="imgs/icon/new-project.svg" alt="">New Project</a></li>
-                            <li class="button button-right"><a href=""><img src="imgs/icon/open-project.svg" alt="">Open project<img src="imgs/icon/arrow.svg" alt=""></a></li>
+                            <li class="button button-right"><a href=""><img src="imgs/icon/open-project-img.svg" alt="">Open project<img src="imgs/icon/arrow.svg" alt=""></a></li>
                         </ul>
                     </li>
 
@@ -56,10 +56,30 @@
         </div>
     </div>
 
-    <div class="container workspase-container">
-        <div class="column column-left">Левая колонка</div>
+    <div class="container workspase-container" id="workspase-container">
+        <div class="column column-left">
+            <div class="explorer-title">
+                <img src="imgs/icon/explorer.svg" alt="">
+                <p>EXPLORER</p>
+            </div>
+            <div class="explorer-subtitle">
+                <p>Planning</p>
+            </div>
+            <div class="planning-buttons">
+                <ul>
+                    <li class="plannig-button"><a href=""><img src="imgs/icon/board.svg" alt="">Board</a></li>
+                    <li class="plannig-button"><a href=""><img src="imgs/icon/backlog.svg" alt="">Backlog</a></li>
+                    <li class="plannig-button"><a href=""><img src="imgs/icon/add-column.svg" alt="">Add Column</a></li>
+                </ul>
+            </div>
+        </div>
+        
         <div class="divider"></div>
-        <div class="column column-right">Правая колонка</div>
+        <div class="column column-right">
+            <div class="explorer-title">
+                <p>Project:</p>
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

@@ -152,13 +152,14 @@ a {
 }
 
 
-/* Основной контейнер */
+/* Main Container */
 .workspase-container {
     display: flex;
     width: 100%;
+    height: calc(100vh - 92px);
 }
 
-/* Колонки */
+/* Columns */
 .column {
     padding: 20px;
     box-sizing: border-box;
@@ -166,20 +167,61 @@ a {
 }
 
 .column-left {
-    background-color: #f2f2f2;
-    width: 50%;
-    /* Изначальная ширина левой колонки */
+    background-color: #EDF2F7;
+    width: 30%;
+    border: 1px solid #CBD5E0;
+}
+
+.explorer-title {
+    display: flex;
+    align-items: center;
+    background-color: #CBD5E0;
+
+    img {
+        margin: 5px 15px;
+    }
+
+    p {
+        font-family: var(--open-sans-font-family);
+        color: var(--main-font-color);
+        font-size: 14px;
+    }
+}
+
+.explorer-subtitle p {
+    margin: 10px 0;
+    font-family: var(--open-sans-font-family);
+    font-size: 12px;
+    color: #4A5568;
+}
+
+.plannig-button {
+    width: 100%;
+    border: 1px solid #CBD5E0;
+    margin: 15px 0;
+    a {
+        display: flex;
+        align-items: center;
+        font-family: var(--open-sans-font-family);
+        font-size: 14px;
+        color: var(--main-font-color);
+
+        img{
+            margin: 6px 15px 6px 5px;
+        }
+    }
 }
 
 .column-right {
     background-color: #e0e0e0;
-    width: 50%;
-    /* Изначальная ширина правой колонки */
+    width: 70%;
 }
 
-/* Разделитель */
+/* Divider */
 .divider {
     width: 5px;
-    background-color: #cccccc;
+    background-color: #fff;
     cursor: ew-resize;
 }
+
+/* Explorer Column */

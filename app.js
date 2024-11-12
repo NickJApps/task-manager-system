@@ -27,3 +27,4 @@ document.addEventListener('mouseup', function() {
     isDragging = false;
     document.body.style.cursor = 'default';
 });
+
