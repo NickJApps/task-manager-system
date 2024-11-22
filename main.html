@@ -21,27 +21,27 @@
                 <ul class="nav-main-items">
                     <li class="nav-main-item">
                         <ul class="nav-buttons-container">
-                            <li class="button button-left"><a href=""><img src="imgs/icon/new-project.svg" alt="">New Project</a></li>
-                            <li class="button button-right"><a href=""><img src="imgs/icon/open-project-img.svg" alt="">Open project<img src="imgs/icon/arrow.svg" alt=""></a></li>
+                            <li><button type="button" class="drop-menu button button-left" id="new-project"><img src="imgs/icon/new-project.svg" alt="">Project<img src="imgs/icon/arrow.svg" alt=""></button></li>
+                            <li><button type="button" class="drop-menu button button-right" id="design"><img src="imgs/icon/open-project-img.svg" alt="">Create<img src="imgs/icon/arrow.svg" alt=""></button></li>
                         </ul>
                     </li>
 
                     <li class="nav-main-item">
                         <ul class="nav-buttons-container">
-                            <li class="button"><a href=""><img src="imgs/icon/test-case.svg" alt="">Show Test Cases</a></li>
+                            <li><button class="button"><img src="imgs/icon/test-case.svg" alt="">Show Test Cases</button></li>
                         </ul>
                     </li>
 
                     <li class="nav-main-item">
                         <ul class="nav-buttons-container">
-                            <li class="button button-left"><a href=""><img src="imgs/icon/team.svg" alt="">Team<img src="imgs/icon/arrow.svg" alt=""></a></li>
-                            <li class="button button-right"><a href=""><img src="imgs/icon/plans.svg" alt="">Plans<img src="imgs/icon/arrow.svg" alt=""></a></li>
+                            <li><button type="button" class="drop-menu button button-left" id="team"><img src="imgs/icon/team.svg" alt="">Team<img src="imgs/icon/arrow.svg" alt=""></button></li>
+                            <li><button type="button" class="drop-menu button button-right" id="plans"><img src="imgs/icon/plans.svg" alt="">Plans<img src="imgs/icon/arrow.svg" alt=""></button></li>
                         </ul>
                     </li>
 
                     <li class="nav-main-item">
                         <ul class="nav-buttons-container">
-                            <li class="button"><a href=""><img src="imgs/icon/create-task.svg" alt="">Create Task<img src="imgs/icon/arrow.svg" alt=""></a></li>
+                            <li><button type="button" class="drop-menu button" id="task"><img src="imgs/icon/create-task.svg" alt="">Create Task<img src="imgs/icon/arrow.svg" alt=""></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -82,6 +82,90 @@
             </div>
         </div>
     </div>
+
+    <!--Modal Windows-->
+    <!--New Project Modal-->
+    <div class="modal" id="new-project-modal">
+        <div class="modal-content">
+            <div class="management">
+                <ul class="management-items">
+                    <li class="management-item"><button type="button" class="button"><img src="imgs/icon/new-project.svg" alt="">New Project</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="imgs/icon/open-project.svg" alt="">Open Project</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="imgs/icon/show-all.svg" alt="">All Projects</button></li>
+                </ul>
+            </div>
+            <div class="recent-divider">
+                <p>Recent</p>
+            </div>
+            <div class="recent-items">
+
+            </div>
+        </div>
+    </div>
+
+    <!--Create Design Modal-->
+    <div class="modal" id="design-modal">
+        <div class="modal-content">
+            <div class="management">
+                <ul class="management-items">
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Test Plan</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Check List</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Decision Table</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Pairwise</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Create Team Modal-->
+    <div class="modal" id="team-modal">
+        <div class="modal-content">
+            <div class="management">
+                <ul class="management-items">
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Team</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Option</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Option</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Option</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!--Create Plans Modal-->
+    <div class="modal" id="plans-modal">
+        <div class="modal-content">
+            <div class="management">
+                <ul class="management-items">
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Creat Plan</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Option</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Option</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Option</button></li>
+                </ul>
+            </div>
+            <div class="recent-divider">
+                <p>Recent</p>
+            </div>
+            <div class="recent-items">
+
+            </div>
+        </div>
+    </div>
+    
+     <!--Create Task Modal-->
+     <div class="modal" id="task-modal">
+        <div class="modal-content">
+            <div class="management">
+                <ul class="management-items">
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Create Bag</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Option</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Option</button></li>
+                    <li class="management-item"><button type="button" class="button"><img src="" alt="">Option</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     <script src="app.js"></script>
 </body>
 

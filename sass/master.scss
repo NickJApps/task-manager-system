@@ -71,7 +71,7 @@ a {
 }
 
 .nav-main-container {
-    min-width: 780px;
+    min-width: 850px;
 }
 
 .nav-logo-container {
@@ -112,20 +112,15 @@ a {
     border: 1px solid #CBD5E0;
     padding: 5px 10px;
     border-radius: 5px;
+    align-items: center;
+    font-family: var(--open-sans-font-family);
+    color: var(--main-font-color);
+    font-size: 13px;
+    cursor: pointer;
 
-    a {
-        display: flex;
-        font-family: var(--open-sans-font-family);
-        color: var(--main-font-color);
-        font-size: 13px;
-    }
-
-    a img:first-child {
-        margin-right: 5px;
-    }
-
-    a img:last-child {
-        margin-left: 5px;
+    img {
+        pointer-events: none;
+        margin: 0 5px;
     }
 }
 
@@ -168,7 +163,7 @@ a {
 
 .column-left {
     background-color: #EDF2F7;
-    width: 30%;
+    width: 20%;
     border: 1px solid #CBD5E0;
 }
 
@@ -199,6 +194,7 @@ a {
     width: 100%;
     border: 1px solid #CBD5E0;
     margin: 15px 0;
+
     a {
         display: flex;
         align-items: center;
@@ -206,7 +202,7 @@ a {
         font-size: 13px;
         color: var(--main-font-color);
 
-        img{
+        img {
             margin: 6px 15px 6px 5px;
         }
     }
@@ -214,7 +210,7 @@ a {
 
 .column-right {
     background-color: #e0e0e0;
-    width: 70%;
+    width: 80%;
 }
 
 /* Divider */
@@ -225,3 +221,72 @@ a {
 }
 
 /* Explorer Column */
+
+
+/* Drop Menu Modal*/
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 20%;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #EDF2F7;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+}
+
+.visible{
+    display: block;
+}
+
+.modal-content {
+    margin: 35px 5px;
+}
+
+
+.modal-content::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #727B8F;
+    display: block;
+}
+
+.management-item {
+    button {
+        width: 100%;
+        border-radius: 0;
+        font-family: var(--open-sans-font-family);
+        color: var(--main-font-color);
+        font-size: 13px;
+        margin: 10px 0;
+        background-color: transparent;
+    }
+}
+
+.recent-divider{
+    display: flex;
+    align-items: center;
+    p{
+        font-family: var(--open-sans-font-family);
+        font-size: 13px;
+        color: #727B8F;
+        margin: 0 5px;
+    }
+}
+
+.recent-divider::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #727B8F;
+}
+
+.recent-divider::before{
+    content: "";
+    height: 1px;
+    width: 10%;
+    background-color: #727B8F;
+}
+
